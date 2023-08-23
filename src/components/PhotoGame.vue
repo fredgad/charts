@@ -1,7 +1,10 @@
 <template>
   <div id="wrapper">
-    <button id="mix" @click="mix">MIX</button>
-    <button id="mix" @click="animate">ANIMATE</button>
+    <h1>Image cut</h1>
+    <div class="buttons">
+      <button class="coolButton" @click="mix">MIX</button>
+      <button class="coolButton" @click="animate">ANIMATE</button>
+    </div>
 
     <input
       id="verticalRng"
@@ -71,39 +74,51 @@ export default {
 
 <style scoped>
 #wrapper {
-  width: 100vw;
+  width: 600px;
+  display: flex;
   position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin-top: 80px;
 }
 #cont {
   position: relative;
   display: grid;
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
+  width: 300px;
   height: 375px;
   perspective: 400px;
   transform-origin: preserve-3d;
+  overflow: hidden;
 }
 .box {
   background: url("../assets/photo1.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   transition: 0.4s;
+  transition: height 0;
 }
 .box:hover {
   transform: translateZ(10px) scale(1.1);
 }
+.buttons {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 #gorisontalRng {
   width: 500px;
-  margin-left: 31vw;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 #verticalRng {
   position: absolute;
   display: block;
   width: 375px;
-  right: -100px;
-  top: 175px;
+  right: -166px;
+  top: 244px;
   transform: rotate(90deg);
 }
 </style>

@@ -36,6 +36,26 @@
   --section-gap: 160px;
 }
 
+.coolButton {
+  color: white;
+  background: rgb(80, 26, 173);
+  top: -80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+.coolButton:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--vt-c-black);

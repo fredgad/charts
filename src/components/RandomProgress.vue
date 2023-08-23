@@ -1,6 +1,8 @@
 <template>
   <div id="wrapper">
+    <h3>Random charts</h3>
     <input
+      class="coolButton"
       type="button"
       v-bind:value="`${props.stopped ? 'Start' : 'Stop'}`"
       @click="add"
@@ -108,27 +110,9 @@ export default {
     width: 30px;
   }
   input[type="button"] {
-    color: white;
-    background: rgb(80, 26, 173);
     position: absolute;
     font-size: 22px;
     font-weight: bold;
-    top: -80px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding: 10px;
-    border-radius: 50px;
-    display: inline-block;
-    border: none;
-    transition: all 0.4s ease 0s;
-    cursor: pointer;
-
-    &:hover {
-      text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-      -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-      -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-      transition: all 0.4s ease 0s;
-    }
   }
   .rng__height {
     position: relative;

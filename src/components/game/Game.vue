@@ -2,11 +2,11 @@
   <section class="game">
     <div class="metrix">
       <div class="steps">
-        <p>Шагов</p>
+        <p>Steps</p>
         <div>{{ props.steps }}</div>
       </div>
       <div class="timer">
-        <p>Таймер</p>
+        <p>Timer</p>
         <div>{{ props.timer }}</div>
       </div>
     </div>
@@ -22,7 +22,7 @@
       </div>
     </transition-group>
     <span>
-      <div class="menuButton" @click="props.startGame()">Заново</div>
+      <div class="menuButton" @click="props.startGame()">Again</div>
     </span>
   </section>
 </template>
@@ -38,6 +38,7 @@ export default {
 .game {
   font-family: Roboto, sans-serif;
   text-align: center;
+  user-select: none;
 
   .metrix {
     display: flex;
