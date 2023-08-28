@@ -78,7 +78,7 @@ export default {
           ${this.calcFastMemory1()},
           ${this.calcFastMemory2()}
           ${200 + 120 * (this.slowMemory[this.ages - 18] / 100)},${
-        0 + (200 * (100 - this.slowMemory[this.ages - 18])) / 100
+        (200 * (100 - this.slowMemory[this.ages - 18])) / 100
       }
           ${this.calcEmpathy1()},${this.calcEmpathy2()}
           200,${220 + (180 / 47) * (this.ages - 18)}
